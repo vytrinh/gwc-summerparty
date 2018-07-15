@@ -18,8 +18,9 @@ export default class TodosList extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleCreate.bind(this)}>
-                <input type="text" placeholder="What do I need to do?" ref="createInput" />
-                <button>Create</button>
+                <div className='input-wrapper'>
+                    <input type="text" placeholder="Add to your summer checklist" ref="createInput" />
+                </div>
                 {this.renderError()}
             </form>
         );

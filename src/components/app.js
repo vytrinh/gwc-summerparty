@@ -2,17 +2,15 @@ import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 
-import style from '../css/style.css';
-
 const todos = [
-{
-    task: 'Pink flamingo pool floatie',
-    isCompleted: false
-},
-{
-    task: 'Donut pool floatie',
-    isCompleted: true
-}
+    {
+        task: 'Pink flamingo pool floatie',
+        isCompleted: false
+    },
+    {
+        task: 'Donut pool floatie',
+        isCompleted: true
+    }
 ];
 
 export default class App extends React.Component {
@@ -26,11 +24,12 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <div class='content'>
-                    <div class='header'>
-                        <h1>Summer Beach Party</h1>
-                    </div>
+            <div className='content'>
+                <div className='header'>
+                    <h1 className='summer'>Summer</h1>
+                    <h1 className='beach-party'>Beach Party</h1>
+                </div>
+                <div className="main">
                     <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
                     <TodosList
                         todos={this.state.todos}
