@@ -2,6 +2,8 @@ import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 
+import style from '../css/style.css';
+
 const todos = [
 {
     task: 'make React tutorial',
@@ -25,14 +27,18 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>React ToDos App</h1>
-                <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
-                <TodosList
-                    todos={this.state.todos}
-                    toggleTask={this.toggleTask.bind(this)}
-                    saveTask={this.saveTask.bind(this)}
-                    deleteTask={this.deleteTask.bind(this)}
-                />
+                <div class='inner'>
+                    <div class='content'>
+                        <h1>Summer Beach Party</h1>
+                        <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
+                        <TodosList
+                            todos={this.state.todos}
+                            toggleTask={this.toggleTask.bind(this)}
+                            saveTask={this.saveTask.bind(this)}
+                            deleteTask={this.deleteTask.bind(this)}
+                        />
+                    </div>
+                </div>
             </div>
         );
     }
