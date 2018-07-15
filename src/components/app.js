@@ -6,11 +6,11 @@ import style from '../css/style.css';
 
 const todos = [
 {
-    task: 'make React tutorial',
+    task: 'Pink flamingo pool floatie',
     isCompleted: false
 },
 {
-    task: 'eat dinner',
+    task: 'Donut pool floatie',
     isCompleted: true
 }
 ];
@@ -27,17 +27,17 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <div class='inner'>
-                    <div class='content'>
+                <div class='content'>
+                    <div class='header'>
                         <h1>Summer Beach Party</h1>
-                        <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
-                        <TodosList
-                            todos={this.state.todos}
-                            toggleTask={this.toggleTask.bind(this)}
-                            saveTask={this.saveTask.bind(this)}
-                            deleteTask={this.deleteTask.bind(this)}
-                        />
                     </div>
+                    <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
+                    <TodosList
+                        todos={this.state.todos}
+                        toggleTask={this.toggleTask.bind(this)}
+                        saveTask={this.saveTask.bind(this)}
+                        deleteTask={this.deleteTask.bind(this)}
+                    />
                 </div>
             </div>
         );
