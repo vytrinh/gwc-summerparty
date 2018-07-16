@@ -18,9 +18,12 @@ html, body {
     justify-content: center;
 }
 .content {
-    max-width: 80%;
     height: 100%;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    flex:0;
 }
 h1 {
     font-size: 100px;
@@ -39,7 +42,10 @@ h1 {
     color: #ffffff;
 }
 .main {
-    height: 54%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .input-wrapper {
     display: flex;
@@ -63,21 +69,30 @@ h1 {
     letter-spacing: normal;
     color: #848484;
     padding: 19px 324px 21px 28px;
+    margin-bottom: 30px;
 }
 .todo-list {
-    height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: flex-start;
-    background-color: #ffffff;
-    opacity: 0.52;
+    background-color: rgba(255, 255, 255, 0.52);
+    margin-top: -30px;
 }
 .action-wrapper {
     width: 608px;
     height: 68px;
     background-color: #ffffff;
+    margin-top: 10px;
+}
+.action-wrapper:first-child {
+   margin-top: 30px;
+   display: flex;
+   justify-content: flex-start;
+}
+#task {
+    margin: 18px 5px 18px 15px;
 }
 #task[type=checkbox] {
     width: 32px;
@@ -97,5 +112,8 @@ label {
     line-height: normal;
     letter-spacing: normal;
     color: #000000;
-    padding: 19px auto 21px 28px;
+    margin: 18px auto 19px 10px;
+}
+form {
+    flex: 0;
 }

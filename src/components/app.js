@@ -24,10 +24,10 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div className='content'>
-                <div className='header'>
-                    <h1 className='summer'>Summer</h1>
-                    <h1 className='beach-party'>Beach Party</h1>
+            <div className="content">
+                <div className="header">
+                    <h1 className="summer">Summer</h1>
+                    <h1 className="beach-party">Beach Party</h1>
                 </div>
                 <div className="main">
                     <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />
