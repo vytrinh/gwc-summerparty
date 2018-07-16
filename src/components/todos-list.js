@@ -11,11 +11,9 @@ export default class TodosList extends React.Component {
 
     render() {
         return (
-            <table>
-                <tbody>
-                    {this.renderItems()}
-                </tbody>
-            </table>
+            <div className='todo-list'>
+                {this.renderItems()}
+            </div>
         );
     }
 }
