@@ -2,6 +2,8 @@ import React from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 
+import Logo from '../images/logo_1.png';
+
 const todos = [
     {
         task: 'Pink flamingo pool floatie',
@@ -26,8 +28,7 @@ export default class App extends React.Component {
         return (
             <div className="content">
                 <div className="header">
-                    <h1 className="summer">Summer</h1>
-                    <h1 className="beach-party">Beach Party</h1>
+                    <img src={Logo} />
                 </div>
                 <div className="main">
                     <CreateTodo todos={this.state.todos} createTask={this.createTask.bind(this)} />

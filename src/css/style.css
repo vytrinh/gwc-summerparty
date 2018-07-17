@@ -5,7 +5,7 @@ html, body {
     width: 100%;
 }
 #app {
-    background-image: url('../images/background.JPG');
+    background-image: url('../images/background_1.jpg');
     background-size: cover;
     background-position: center center;
     margin: auto;
@@ -24,6 +24,7 @@ html, body {
 }
 .header {
     flex:0;
+    margin: 100px auto 50px auto;
 }
 h1 {
     font-size: 100px;
