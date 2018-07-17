@@ -7,7 +7,7 @@ export default class TodosListItem extends React.Component {
 
     render() {
         return (
-            <div className='action-wrapper'>
+            <div className='task-wrapper'>
                 <input type="checkbox" id="task" />
                 <label htmlFor="task">{ this.props.task }</label>
             </div>
