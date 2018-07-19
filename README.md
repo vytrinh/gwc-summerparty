@@ -47,6 +47,7 @@
  
 5. Run the below commands on the terminal to install the dependencies & bringup the server
     - npm i -g webpack-dev-server
+    - cd ~/gwc-summerparty
     - npm i
     - npm run start
  
